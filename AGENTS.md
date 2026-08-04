@@ -2,7 +2,7 @@
 
 - **Language**: TypeScript
 - **Package Manager**: nub
-- **Add-ons**: tailwindcss, ai-tools, vitest, playwright
+- **Add-ons**: tailwindcss, ai-tools, vitest, playwright, convex
 
 ---
 

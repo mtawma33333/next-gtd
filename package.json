@@ -12,9 +12,13 @@
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
     "test:unit": "vitest",
     "test": "npm run test:unit -- --run && npm run test:e2e",
-    "test:e2e": "playwright install && playwright test"
+    "test:e2e": "playwright install && playwright test",
+    "lint": "biome check",
+    "lint:fix": "biome check --write",
+    "format": "biome format --write"
   },
   "devDependencies": {
+    "@biomejs/biome": "^2.5.6",
     "@playwright/test": "^1.60.0",
     "@sveltejs/adapter-auto": "^7.0.1",
     "@sveltejs/kit": "^2.63.0",
@@ -40,5 +44,8 @@
       "version": "^0.6.0",
       "onFail": "warn"
     }
+  },
+  "allowBuilds": {
+    "esbuild": true
   }
 }
